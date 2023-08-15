@@ -24,7 +24,8 @@ function toggleDarkMode() {
             liElements.forEach(li => li.classList.add('li-elements-dark'));
         }
         countryContainer.forEach(country => country.classList.add('country-dark'));
-        if(headerLink !== undefined || headerLink !== null) {
+        console.log(headerLink)
+        if(headerLink !== undefined && headerLink !== null) {
             headerLink.classList.add('header-link-dark');
         }
         darkBtn.innerHTML = `<i class="fas fa-solid fa-sun"></i>    Light Mode`;
