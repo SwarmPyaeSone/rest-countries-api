@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Data</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/9d330b6d1c.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/dropdown.js" defer></script>
+    <script src="scripts/darkmode-main.js" defer></script>
+    <script src="scripts/search.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Where in the world?</h1>
+            <button class="dark-btn"><i class="fas fa-solid fa-moon"></i>    Dark Mode</button>
+        </div>
+    </header>
+    
+    <section class="search-and-filter-container">
+        <div class="search-container">
+           <form action="search.html">
+                <input type="text" name="search" id="search" placeholder="Search for a country...">
+            </form>
+        </div>
+        <div class="filter-container">
+            <div class="filter">
+                <p>Filter by Region</p>
+                <i class="fas fa-solid fa-angle-down"></i>
+            </div>
+            <div class="filter-dropdown">
+                <li class="li-elements">Africa</li>
+                <li class="li-elements">America</li>
+                <li class="li-elements">Asia</li>
+                <li class="li-elements">Europe</li>
+                <li class="li-elements">Oceania</li>
+            </div>
+        </div>
+    </section>
+
+    <section class="country-list-container">
+        <div class="country-wrapper">
+        </div>
+    </section>
+
+    <div class="overlay"></div>
+    <div class="spinner-box">
+        <div class="pulse-container">  
+          <div class="pulse-bubble pulse-bubble-1"></div>
+          <div class="pulse-bubble pulse-bubble-2"></div>
+          <div class="pulse-bubble pulse-bubble-3"></div>
+        </div>
+      </div>
+</body>
+</html>
